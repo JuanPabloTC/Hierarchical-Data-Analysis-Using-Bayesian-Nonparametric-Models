@@ -21,7 +21,7 @@ suppressMessages(suppressWarnings(library(posterior)))
 
 
 # Load C++ function
-Rcpp::sourceCpp("path/Samplers_M2.cpp")
+Rcpp::sourceCpp("path/samplers_M2_rcpp.cpp")
 
 
 
