@@ -21,7 +21,7 @@ suppressMessages(suppressWarnings(library(posterior)))
 suppressMessages(suppressWarnings(library(mclust)))
 
 # Set working directory 
-ruta <- setwd('D:/Actualizado/Maestria estadistica/Tesis/Modelos BNP/23-05-26')
+ruta <- setwd('path')
 
 # Path for results
 path_to_results <- paste0(ruta,'/Resultados/Modelo_3/MCMC3')
