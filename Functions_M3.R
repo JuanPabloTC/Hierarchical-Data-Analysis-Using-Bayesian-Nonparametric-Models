@@ -22,7 +22,7 @@ suppressMessages(suppressWarnings(library(posterior)))
 
 # Load xi samplers. C++ functions
 
-Rcpp::sourceCpp("path/samplers_M2_rcpp.cpp")
+Rcpp::sourceCpp("path/samplers_M3_rcpp.cpp")
 
 
 
