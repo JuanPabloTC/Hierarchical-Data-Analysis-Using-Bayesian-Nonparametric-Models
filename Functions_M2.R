@@ -21,7 +21,7 @@ suppressMessages(suppressWarnings(library(posterior)))
 
 
 # Load C++ function
-Rcpp::sourceCpp("D:/Actualizado/Maestria estadistica/Tesis/Modelos BNP/15-05-26/Muestreadores_xi_rcpp.cpp")
+Rcpp::sourceCpp("path/Samplers_M1.cpp")
 
 
 
