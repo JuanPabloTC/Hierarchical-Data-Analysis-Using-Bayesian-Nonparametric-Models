@@ -22,7 +22,7 @@ suppressMessages(suppressWarnings(library(posterior)))
 
 # Load xi samplers. C++ functions
 
-Rcpp::sourceCpp("D:/Actualizado/Maestria estadistica/Tesis/Modelos BNP/23-05-26/M3_Muestreadores_xi_E_M_D_rcpp.cpp")
+Rcpp::sourceCpp("path/samplers_M2_rcpp.cpp")
 
 
 
