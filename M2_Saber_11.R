@@ -21,7 +21,7 @@ suppressMessages(suppressWarnings(library(posterior)))
 suppressMessages(suppressWarnings(library(mclust)))
 
 # Set working directory
-ruta <- setwd('D:/Actualizado/Maestria estadistica/Tesis/Modelos BNP/15-05-26')
+ruta <- setwd('path')
 
 # Path for results
 path_to_results <- paste0(ruta,'/Resultados/Modelo_2/MCMC2')
@@ -1113,22 +1113,3 @@ cat("  Trabaja:           ", adjustedRandIndex(xi_post, datos$trabaja_categoria)
 
 
 
-
-
-
-# tabulate by row (each row = one MCMC iteration)
-# For each iteration, count how many of the 42,481 students belong to each cluster
-sizes_per_iter <- t(apply(cadena_filtered$xi_correct_order, 1, function(xi_b) {
-  tabulate(xi_b, nbins = 7)
-}))
-# sizes_per_iter has dim [n_iter x 7]
-
-# Mean cluster size across iterations
-mean_sizes <- colMeans(sizes_per_iter)
-
-cat("Mean cluster sizes across iterations:\n")
-print(round(mean_sizes, 1))
-cat("\nTotal (should equal nrow(datos) = 42,481):\n")
-print(sum(mean_sizes))
-cat("\nRelative proportions (%):\n")
-print(round(100 * mean_sizes / sum(mean_sizes), 2))
